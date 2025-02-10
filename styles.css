@@ -1,0 +1,133 @@
+body {
+    font-family: Inter, sans-serif;
+    background-color: rgb(41, 31, 26);
+    color: #db8979;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.cartas, .cartas2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    max-width: 1000px;
+    gap: 15px;
+}
+
+.RecuadroPersonalInfo, .RecuadroEdu {
+    flex: 1;  
+    background-color: rgb(65, 45, 36);
+    padding: 20px;
+    box-shadow: 50px 50px 150px rgba(10, 2, 0, 0.1);
+    width: 400px; 
+    max-width: 100%;
+    min-height: 550px; 
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+.RecuadroPersonalInfo img{
+    width: 100%;  
+    max-width: 400px;
+    height: 463px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;}
+.RecuadroEdu img {
+        width: 100%;  
+        max-width: 400px;
+        height: 500px; 
+        object-fit: cover; 
+        display: block;
+        margin: 0 auto;}
+
+.Hobbies, .RecuadroSkills, .RecuadroLabor {
+    flex: 1;  
+    background-color: rgb(65, 45, 36);
+    padding: 20px;
+    box-shadow: 50px 50px 150px rgba(10, 2, 0, 0.1);
+    width: 400px; 
+    max-width: 100%;
+    min-height: 170px; 
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; }
+.Hoja {
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    right: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;}
+
+h1, h2 {
+    color: rgb(161, 60, 60);
+}
+
+a {
+    color: rgb(184, 118, 87);
+}
+
+footer {
+    color:white;
+    text-align: center;}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 1080px) {
+    .cartas, .cartas2 {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cartas, .cartas2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .RecuadroPersonalInfo, .RecuadroEdu, .Hobbies, .RecuadroSkills, .RecuadroLabor,  .Hoja {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) 
+    .cartas, .cartas2 {
+        flex-direction: column;
+        align-items: space-around;
+    }
+    
+    .RecuadroPersonalInfo, .RecuadroEdu, .Hobbies, .RecuadroSkills, .RecuadroLabor {
+        width: 82%;
+        padding: 15px;
+    }
+
+    .Hoja {
+        width: 100%;
+        padding: 0%;
+    }
+
+    @media (orientation: landscape) and (max-width: 480px) {
+        .Hoja {
+            width: 100%;
+            right: 100% 
+            }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
