@@ -100,7 +100,7 @@ h1 {
         align-items: center;
     }
 
-    .RecuadroPersonalInfo, .RecuadroEdu, .Hobbies, .RecuadroSkills, .RecuadroLabor {
+    .RecuadroPersonalInfo, .RecuadroEdu, .Hobbies, .RecuadroSkills, .RecuadroLabor,  .Hoja {
         width: 90%;
     }
 }
@@ -112,6 +112,11 @@ h1 {
     }
     
     .RecuadroPersonalInfo, .RecuadroEdu, .Hobbies, .RecuadroSkills, .RecuadroLabor {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .Hoja {
         width: 95%;
         padding: 15px;
     }
